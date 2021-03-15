@@ -126,7 +126,9 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--work {
-    color: var(--clr-accent);
+    background: var(--clr-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
