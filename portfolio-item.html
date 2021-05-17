@@ -32,22 +32,54 @@
                 </ul>
             </nav>
         </header>
-        
+
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                <strong>Pokedex</strong>
+                <strong>Pokédex</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Gotta call 'em all!</p>
             <img src="" alt="" class="intro__img">
         </section>
         
-        <div class="portfolio-item-individual">
-            <p style="font-size:115%;">This project is all about using the pokedex API to cause a chain reaction of function calls and replies that we can then use along with css to create cards.</p>
-            <img src="img/01-details.png" alt="">
-            <p style="font-size:115%;">The html is standard, handing off the actually heavy lifting to CSS and Javascript.</p>
-            <p style="font-size:115%;">Starting with JS, the idea is to create an elementId that can be used in the future, and pkmn number to provide a count for the API. Using that number, we can create a function to fetch the corresponding numbers (in this case the function keeps adding +1 until it hits 150). We set this function up as await, wherein the next function fetches the information (the number given) and gives us back the corresponding pokemon's data. We can set this up as creating a 'card'. We then use this 'card' to create another function that gives us more data and a visual. Things like what type it is, the name, and the sprite, are all pulled for our use. We inject some html here to actually let us see this on the page, where we finally append and call the functions at the end.</p>
-            <p style="font-size:115%;">The CSS is then used to properly space and contain the information (particularly between one another), add a color gradient behind the cards, and the white color to create the 'card' (which was just the information from the function). </p>
-        </div>
+        <section class="block-content t-block-color l-block-spacing">
+            <div class="l-contained ">
+                <ul class="timeline-list" style="list-style: none;">
+                    <li>
+                        <div class="content timeline-border specialshadow">    
+                                <img src="img/pokedexstretch.png" alt="A picture of the pokedex application">
+                                <h2>Checkout the <a href="https://github.com/Crisheight/pokedexsimple">code</a></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Problems and Challenges</h3>
+                            <p>
+                                This entire website. Who even made thi-me. IT WAS ME. Sigh. You have 
+                                to start somewhere, though! It's only up from here, in this economy! 
+                                Looking at you housing prices. D; 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Solutions</h3>
+                            <p>
+                                Break site. Fix site. Big brain an idea. Draw it. Write it. Write some more 
+                                until I ACTUALLY understand. Build! Band head at wall repeatedly. BOOM, it's done. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Extras</h3>
+                            <p>
+                                Dip your fried chicken in honey it'll change your life I promise. 
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         
         
         <!-- Footer -->
