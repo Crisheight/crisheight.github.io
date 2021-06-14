@@ -273,6 +273,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    overflow: hidden;
 }
 
 .section__subtitle--intro {
@@ -487,7 +488,7 @@ header {
     display: inline;
     justify-content: space-evenly;
     margin: 2em 0 0;
-    padding: 0
+    padding: 0;
 }
 
 .social-list__link {
@@ -580,8 +581,9 @@ header {
     border-radius: 4px;
 	background: #f5f5f5;
 	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
-    width: 93%
-  }
+    width: 93%;
+    overflow: visible;  
+}
   .content::after {
     content: '';
     position: absolute;
@@ -645,32 +647,30 @@ header {
       margin:0 auto;
   }
     .timeline-list::before {
-          content: "";
-       border-left: 5px solid rgba(82,82,212,1);
-       left: -0.25em;
-       top: 2em;
-       height: 100%;
-       position: absolute;
-       bottom: 0;
-       top: 0;
-      transform-origin:0 0;
-      animation:scaleVertical 3s 1s ease both 1;
+        content: "";
+        border-left: 7.3px solid rgba(82,82,212,1);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5px;
+        transform-origin:0 0;
+        animation:scaleVertical 3s 1s ease both 1;
       }
   
     .timeline-list::after {
-          content: "";
-      clear:both;
-      
-          position: absolute;
-          bottom: -1.65em;
-          left: -1.01em;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: none repeat scroll 0% 0% rgb(0, 0, 0);
-          border: 5px solid rgba(120,26,68,1);
-          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-      animation:revealScaleUp 0.75s 2.82s ease both 1;
+        content: "";
+        clear:both;
+        position: absolute;
+        bottom: -10px;
+        left: -.92em;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: none repeat scroll 0% 0% rgb(0, 0, 0);
+        border: 5px solid rgba(120,26,68,1);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        animation:revealScaleUp 0.75s 2.82s ease both 1;
       }
     .t-block-color {
         background: rgb(255, 255, 255);
@@ -698,20 +698,22 @@ header {
       margin:0 0 3em 0;
       padding:0 2em 0em 2em;
       position: relative;
+      min-width: 25%;
+      min-height: 25%;
   
   }
   .timeline-list li:before {
   
       content: "";
       position: absolute;
-      top: 0px;
-      left: -3.25em;
+      top: -1px;
+      left: -3.175em;
       width: 30px;
       height: 30px;
       border-radius: 50%;
       background: none repeat scroll 0% 0% rgb(0, 0, 0);
       border: 5px solid rgb(82,82,212,1);
-    animation:revealScaleUp 0.75s 0s ease both 1;
+      animation:revealScaleUp 0.75s 0s ease both 1;
   }
   .timeline-list {
      
