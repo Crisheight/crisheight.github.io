@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rosa</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link rel="icon" 
+        type="image/png" 
+        href="img/rosafav.png">
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/rosa2side.png" alt=""></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Weather</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Geolocation enabled</p>
+            <img src="" alt="" class="intro__img">
+        </section>
+        
+        <section class="block-content t-block-color l-block-spacing">
+            <div class="l-contained">
+                <ul class="timeline-list" style="list-style: none;">
+                    <li>
+                        <div class="content timeline-border specialshadow">
+                            <img src="img/weather.png" alt="A picture of the current temperature">
+                            <h2>Check out the <a href="https://github.com/Crisheight/GeoWeather"> code</a></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Problems and Challenges</h3>
+                            <p>
+                                The DarkSky API correlated to the skycons icon pack has been boughtout by Apple and no longer available, meaning I had to implement a different API and adjust the skycons pack code to match. 
+                                <br>A bigger problem is the openAPI unique key is exposed if I upload it to Github because of how the API is called.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Solutions</h3>
+                            <p>
+                               OpenweatherAPI saved the day, and looking at their own icon pack code/correlations I was able to match the skycons pack to the proper weather conditions. 
+                               <br>In terms of protecting API keys, I would need to implement dotenv dependency. It might also just be easier to rewrite this as a react app since it has that built in. Since this is client side checking it seems the key is easier to dig up than if it was server side.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Extras</h3>
+                            <p>
+                                The best kind of weather is when the is sun out but it's faintly drizzling!
+                                <br>Wish Apple kept the DarkSky API available to the public, it was by far my favorite to use.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <p><a href="mailto:crisheight@gmail.com" class="footer__link">crisheight@gmail.com</a></p>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io/Crisheight">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/crisheight/">
+                    <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com/Crisheight">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+        </footer>
+        
+        
+        <script src="main.js"></script>
+        
+    </body>
+</html>
